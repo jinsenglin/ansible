@@ -13,6 +13,8 @@
 - sudo apt-get update
 - sudo apt-get install jenkins
 - sudo service jenkins start
+- http://stackoverflow.com/questions/17940612/authentication-error-in-jenkins-on-using-sudo
+- sudo echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers
 
 # about install docker
 - https://docs.docker.com/engine/installation/ubuntulinux/
@@ -26,3 +28,6 @@
 - sudo apt-get install linux-image-extra-$(uname -r)
 - sudo apt-get install docker-engine
 - sudo service docker start
+
+# about helo-docker in jenkins
+- sudo docker run hello-world
