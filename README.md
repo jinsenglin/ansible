@@ -37,8 +37,6 @@
 - sudo apt-get install nginx
 
 # about build docker image 'openstackc-cli'
-- mkdir openstack-cli
-- cd openstack-cli
 - wget https://raw.githubusercontent.com/jinsenglin/docker/master/dockerfiles/ubuntu14.04.3-openstack-cli/Dockerfile
-- sudo docker build .
+- sudo docker build -t openstack-cli .
  
