@@ -5,6 +5,7 @@
 - wget https://raw.githubusercontent.com/jinsenglin/screen/dev/.screenrc
 - install docker
 - install jenkins
+- install nginx
  
 # about install jenkins
 - https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
@@ -31,3 +32,13 @@
 
 # about helo-docker in jenkins
 - sudo docker run hello-world
+
+# about install nginx
+- sudo apt-get install nginx
+
+# about build docker image 'openstackc-cli'
+- mkdir openstack-cli
+- cd openstack-cli
+- wget https://raw.githubusercontent.com/jinsenglin/docker/master/dockerfiles/ubuntu14.04.3-openstack-cli/Dockerfile
+- sudo docker build .
+ 
