@@ -16,7 +16,7 @@
 - sudo service jenkins start
 - http://stackoverflow.com/questions/17940612/authentication-error-in-jenkins-on-using-sudo
 - sudo echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers
-- firefox http://<IP>:8080/
+- firefox http://IP:8080/
 
 # about install docker
 - https://docs.docker.com/engine/installation/ubuntulinux/
@@ -36,7 +36,7 @@
 
 # about install nginx
 - sudo apt-get install nginx
-- firefox http://<IP>/
+- firefox http://IP/
 
 # about build docker image 'openstackc-cli'
 - wget https://raw.githubusercontent.com/jinsenglin/docker/master/dockerfiles/ubuntu14.04.3-openstack-cli/Dockerfile
@@ -46,4 +46,4 @@
 - https://about.gitlab.com/upgrade-to-package-repository/
 - curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 - sudo apt-get install gitlab-ce
-- firefox http://<IP>/
+- firefox http://IP/
