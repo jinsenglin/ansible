@@ -8,7 +8,7 @@
 - install nginx
  
 # about install jenkins
-- TCP port requirement: 8080
+- TCP port requirement: 8080 (-> 8088)
 - https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
 - wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 - sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -18,6 +18,9 @@
 - http://stackoverflow.com/questions/17940612/authentication-error-in-jenkins-on-using-sudo
 - sudo echo "jenkins ALL= NOPASSWD: ALL" >> /etc/sudoers
 - firefox http://IP:8080/
+- sudo -e /etc/default/jenkins
+- HTTP_PORT=8088
+- firefox http://IP:8088/
 
 # about install docker
 - https://docs.docker.com/engine/installation/ubuntulinux/
