@@ -46,4 +46,7 @@
 - https://about.gitlab.com/upgrade-to-package-repository/
 - curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 - sudo apt-get install gitlab-ce
-- firefox http://IP/
+- http://serverfault.com/questions/585528/set-gitlab-external-web-port-number
+- external_url 'http://IP:9090'
+- sudo gitlab-ctl reconfigure
+- firefox http://IP:9090/
