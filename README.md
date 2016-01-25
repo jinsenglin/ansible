@@ -40,3 +40,7 @@
 - wget https://raw.githubusercontent.com/jinsenglin/docker/master/dockerfiles/ubuntu14.04.3-openstack-cli/Dockerfile
 - sudo docker build -t openstack-cli .
  
+# about install gitlab
+- https://about.gitlab.com/upgrade-to-package-repository/
+- curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+- sudo apt-get install gitlab-ce
