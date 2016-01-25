@@ -63,5 +63,3 @@
 - sudo mkswap /swapfile
 - sudo swapon /swapfile
 - https://about.gitlab.com/downloads/#ubuntu1404
-- sudo apt-get install postfix
-- Local only :: jenkins
