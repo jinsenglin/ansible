@@ -42,6 +42,7 @@
 - - TCP port requirement: 80
 - sudo apt-get install nginx
 - firefox http://IP/
+- ROOT HTML DIR /usr/share/nginx/html/
 
 # about build docker image 'openstackc-cli'
 - wget https://raw.githubusercontent.com/jinsenglin/docker/master/dockerfiles/ubuntu14.04.3-openstack-cli/Dockerfile
