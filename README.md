@@ -54,3 +54,7 @@
 - external_url 'http://IP:9090'
 - sudo gitlab-ctl reconfigure
 - firefox http://IP:9090/
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-gitlab-as-your-very-own-private-github-clone
+- sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024k
+- sudo mkswap /swapfile
+- sudo swapon /swapfile
