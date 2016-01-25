@@ -8,6 +8,7 @@
 - install nginx
  
 # about install jenkins
+- TCP port requirement: 8080
 - https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
 - wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 - sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -35,6 +36,7 @@
 - sudo docker run hello-world
 
 # about install nginx
+- - TCP port requirement: 80
 - sudo apt-get install nginx
 - firefox http://IP/
 
@@ -43,10 +45,12 @@
 - sudo docker build -t openstack-cli .
  
 # about install gitlab
+- TCP port requirement: 80 (-> 9090) , 8080
 - https://about.gitlab.com/upgrade-to-package-repository/
 - curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 - sudo apt-get install gitlab-ce
 - http://serverfault.com/questions/585528/set-gitlab-external-web-port-number
+- sudo -e /etc/gitlab/gitlab.rb
 - external_url 'http://IP:9090'
 - sudo gitlab-ctl reconfigure
 - firefox http://IP:9090/
