@@ -62,3 +62,6 @@
 - sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024k
 - sudo mkswap /swapfile
 - sudo swapon /swapfile
+- https://about.gitlab.com/downloads/#ubuntu1404
+- sudo apt-get install postfix
+- Local only :: jenkins
