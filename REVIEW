@@ -55,7 +55,7 @@
 - CHECK: http://10.5.50.188:8088
 - CHECK: http://10.5.50.188:9090
 
-# TODO 每次重開機後自動掛載 /dev/vdb1 到 /usr/share/nginx/html/data
+# 每次重開機後自動掛載 /dev/vdb1 到 /usr/share/nginx/html/data
 - sudo mkdir /usr/share/nginx/html/data
 - sudo sed -i "$ a /dev/vdb1   /usr/share/nginx/html/data        ext4   defaults        0 0" /etc/fstab
 - sudo mount -a
