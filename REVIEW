@@ -64,7 +64,7 @@
 - CHECK: df -h
 
 # GITLAB
-- create account "jinseng" with password "iiiiiiii"
+- create account "jinseng" with password "iiiiiiii" of project limits "100"
 - 
 
 # TODO 每次重開機後自動掛載 swap
