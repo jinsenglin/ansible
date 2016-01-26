@@ -28,7 +28,7 @@
 
 # install nginx
 - sudo apt-get install nginx
-- CHECK: firefox http://10.5.50.188
+- CHECK: http://10.5.50.188
 - NOTE: html root dir is /usr/share/nginx/html/
 
 # install jenkins
@@ -48,3 +48,9 @@
 - sudo gitlab-ctl reconfigure
 - CHECK: http://10.5.50.188:9090
 - NOTE: default administrator account and password is "root" and "5iveL!fe" (第一次登入強迫修改 , 新密碼azazazaz)
+
+# restart vm "jenkins"
+- CHECK: sudo docker ps
+- CHECK: http://10.5.50.188
+- CHECK: http://10.5.50.188:8088
+- CHECK: http://10.5.50.188:9090
