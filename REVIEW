@@ -40,6 +40,7 @@
 - sudo service jenkins start
 - CHECK: http://10.5.50.188:8088
 - sudo sed -i "$ a jenkins ALL= NOPASSWD: ALL" /etc/sudoers
+- NOTE: jenkins home dir is ?
 
 # install gitlab
 - curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
