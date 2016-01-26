@@ -70,5 +70,16 @@
 - add ssh key "jinseng"
 - create "public" project "jenkins"
 - add file "REAME.md"
+- add folder "keys"
+- add file "keys/jinseng.pem"
+- add file "keys/jinseng.pem.pub"
+- add file "keys/ubuntu.pem"
+- add file "keys/ubuntu.pem.pub"
+- add folder "scrips"
+- add file "scrips/hello-gitlab"
+- add file "scrips/build-installer-vm-openstack-kvm.sh"
+- add folder "dockerfiles"
+- add folder "dockerfiles/openstack-cli"
+- add file "dockerfiles/openstack-cli/Dockerfile"
 
 # TODO 每次重開機後自動掛載 swap
