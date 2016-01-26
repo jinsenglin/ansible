@@ -32,4 +32,11 @@
 - NOTE: html root dir is /usr/share/nginx/html/
 
 # install jenkins
-- 
+- wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+- sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list'
+- sudo apt-get update
+- sudo apt-get install jenkins
+- sudo sed -i 's/HTTP_PORT=8080/HTTP_PORT=8088/' /etc/default/jenkins
+- sudo service jenkins start
+- CHECK: http://10.5.50.188:8088
+- sudo sed -i "$ a jenkins ALL= NOPASSWD: ALL" /etc/sudoers
