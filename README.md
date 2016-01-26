@@ -55,7 +55,7 @@
 - sudo apt-get install gitlab-ce
 - http://serverfault.com/questions/585528/set-gitlab-external-web-port-number
 - sudo -e /etc/gitlab/gitlab.rb
-- external_url 'http://IP:9090'
+- external_url 'http://HOSTNAME:9090'
 - sudo gitlab-ctl reconfigure
 - firefox http://IP:9090/
 - 預設的管理員帳密 root / 5iveL!fe (->azazazaz 第一次登入強迫修改)
