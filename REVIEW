@@ -87,4 +87,12 @@
 - add task "docker-build-openstack-cli"
 - add step "[ -d dockerfiles ] || mkdir dockerfiles && cd dockerfiles && [ -d openstack-cli ] || mkdir openstack-cli && cd openstack-cli && curl http://10.5.50.187:9090/jinseng/jenkins/raw/master/dockerfiles/openstack-cli/Dockerfile -O && sudo docker build -t openstack-cli ."
 
+# JENKINS
+- add task "hello-docker"
+- add step "sudo docker run --rm=true hello-world"
+
+# JENKINS
+- add task "hello-gitlab"
+- add step "sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash""
+
 # TODO 每次重開機後自動掛載 swap
