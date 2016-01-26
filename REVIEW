@@ -69,6 +69,8 @@
 
 # GITLAB - jinseng
 - add ssh key "jinseng"
+
+# GITLAB - jinseng
 - create "public" project "jenkins"
 - add file "REAME.md"
 - add folder "keys"
@@ -94,6 +96,11 @@
 # JENKINS
 - add task "hello-gitlab"
 - add step "sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash""
+
+# GITLAB - jinseng
+- create "public" project "build-installer-vm-openstack-kvm"
+- add file "REAME.md"
+- # TODO
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
