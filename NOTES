@@ -22,3 +22,13 @@ MODIFY
 
 git commit -m "updated"
 git push
+
+=======================
+
+# JENKINS
+- build-installer-vm-openstack-kvm :: sudo docker run --rm=false --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash"
+- cleanup-openstack ::
+- hello-docker :: sudo docker run --rm=true hello-world
+- hello-gitlab :: sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash"
+- init-openstack ::
+- install-devops-platform-on-openstack ::
