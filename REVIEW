@@ -23,5 +23,6 @@
 - sudo apt-get update
 - sudo apt-get install linux-image-extra-$(uname -r)
 - sudo apt-get install docker-engine
-- sudo service docker start
+- CHECK: sudo docker ps
+- NOTE: docker host ip is 172.17.0.1
 
