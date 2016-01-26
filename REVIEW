@@ -84,5 +84,6 @@
 
 # JENKINS
 - add task "docker-build-openstack-cli"
+- add step "sudo docker build -t openstack-cli ."
 
 # TODO 每次重開機後自動掛載 swap
