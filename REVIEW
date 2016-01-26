@@ -82,10 +82,7 @@
 - add folder "dockerfiles/openstack-cli"
 - add file "dockerfiles/openstack-cli/Dockerfile"
 
-# DOCKER
-- 
-
 # JENKINS
-- 
+- add task "docker-build-openstack-cli"
 
 # TODO 每次重開機後自動掛載 swap
