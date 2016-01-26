@@ -45,3 +45,6 @@
 - curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 - sudo apt-get install gitlab-ce
 - sudo sed -i "s-external_url 'http://jenkins'-external_url 'http://jenkins:9090'-" /etc/gitlab/gitlab.rb
+- sudo gitlab-ctl reconfigure
+- CHECK: http://10.5.50.188:9090
+- NOTE: default administrator account and password is "root" and "5iveL!fe" (第一次登入強迫修改 , 新密碼azazazaz)
