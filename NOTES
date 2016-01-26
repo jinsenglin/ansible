@@ -45,3 +45,9 @@ git push
 - jinseng/installer-shell
 - jinseng/oss-api
 - jinseng/oss-ui
+
+=======================
+
+# NGINX
+- /usr/share/nginx/html/data/blobs/latest/
+- /usr/share/nginx/html/data/blobs/history/
