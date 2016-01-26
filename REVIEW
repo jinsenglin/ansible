@@ -8,4 +8,5 @@
 
 # ssh login vm "jenkins"
 - sudo sed -i "1 i 127.0.0.1 $HOSTNAME" /etc/hosts
-- 
+- sudo fdisk /dev/vdb
+- sudo mkfs -t ext4 /dev/vdb1
