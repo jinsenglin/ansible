@@ -6,6 +6,7 @@
 - install docker
 - install jenkins
 - install nginx
+- install gitlab
  
 # about install jenkins
 - TCP port requirement: 8080 (-> 8088)
