@@ -63,4 +63,8 @@
 - sudo init 6
 - CHECK: df -h
 
+# GITLAB
+- create account "jinseng" with password "iiiiiiii"
+- 
+
 # TODO 每次重開機後自動掛載 swap
