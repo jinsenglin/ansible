@@ -1,0 +1,24 @@
+# HOST DOES ONE TIME
+echo -e "Host jenkins\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+git config --global user.email "jinsenglin@iii.org.tw"
+git config --global user.name "jinseng"
+
+# CONTAINER DOES ONE TIME
+echo -e "Host 172.17.0.1\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+git config --global user.email "jinsenglin@iii.org.tw"
+git config --global user.name "jinseng"
+
+# HOST DOES EVERYTIME
+wget http://jenkins:9090/jinseng/jenkins/raw/master/keys/jinseng.pem
+chmod 600 jinseng.pem
+
+eval `ssh-agent -s`
+ssh-add jinseng.pem
+
+git clone git@jenkins:jinseng/jenkins.git
+cd jenkins
+
+MODIFY
+
+git commit -m "updated"
+git push
