@@ -1,0 +1,8 @@
+# create vm named "jenkins" from image "trusty-server-cloudimg-amd64-disk1" of flavor type "m1.small"
+- key pair "dev"
+- security groups ["default","ssh","jenkins","gitlab","nginx"]
+- with floating ip "10.5.50.188"
+
+# create volume named "nginx-html-root" of 100GB
+- attached to "jenkins" as "/dev/vdb"
+
