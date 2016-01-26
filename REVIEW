@@ -67,8 +67,8 @@
 - create account "jinseng" with password "iiiiiiii" of project limits "100"
 
 # GITLAB - jinseng
+- add ssh key "jinseng"
 - create "public" project "jenkins"
 - add file "REAME.md"
--
 
 # TODO 每次重開機後自動掛載 swap
