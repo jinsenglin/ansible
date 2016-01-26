@@ -97,6 +97,6 @@
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
-- add step "sudo docker run --rm=false --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash""
+- add step "sudo docker run --rm=false --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash""
 
 # TODO 每次重開機後自動掛載 swap
