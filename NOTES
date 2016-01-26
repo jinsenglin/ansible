@@ -32,3 +32,16 @@ git push
 - hello-gitlab :: sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash"
 - init-openstack ::
 - install-devops-platform-on-openstack ::
+
+=======================
+
+# GITLAB
+- jinseng/jenkins
+- jinseng/installer
+- jinseng/installer-vm
+- jinseng/installer-blob-object
+- jinseng/installer-rest-unit-test
+- jinseng/installer-rest
+- jinseng/installer-shell
+- jinseng/oss-api
+- jinseng/oss-ui
