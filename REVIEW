@@ -40,3 +40,8 @@
 - sudo service jenkins start
 - CHECK: http://10.5.50.188:8088
 - sudo sed -i "$ a jenkins ALL= NOPASSWD: ALL" /etc/sudoers
+
+# install gitlab
+- curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+- sudo apt-get install gitlab-ce
+- sudo sed -i "s-external_url 'http://jenkins'-external_url 'http://jenkins:9090'-" /etc/gitlab/gitlab.rb
