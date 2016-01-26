@@ -82,12 +82,14 @@
 - add folder "dockerfiles/openstack-cli"
 - add file "dockerfiles/openstack-cli/Dockerfile"
 
+# JENKINS
+- add task "docker-build-openstack-cli"
+- add step "[ -d dockerfiles ] || mkdir dockerfiles && cd dockerfiles && [ -d openstack-cli ] || mkdir openstack-cli && cd openstack-cli && curl http://10.5.50.187:9090/jinseng/jenkins/raw/master/dockerfiles/openstack-cli/Dockerfile -O && sudo docker build -t openstack-cli ."
+
 # DOCKER
 - mkdir -p /tmp/dockerfiles/openstack-cli
 - cd /tmp/dockerfiles/openstack-cli
 - curl http://jenkins:9090/jinseng/jenkins/raw/master/dockerfiles/openstack-cli/Dockerfile -O
 - sudo docker build -t openstack-cli .
-
-# JENKINS
 
 # TODO 每次重開機後自動掛載 swap
