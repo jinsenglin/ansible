@@ -101,6 +101,8 @@
 - create "public" project "build-installer-vm-openstack-kvm"
 - add file "REAME.md"
 - add file "main.sh"
+- add file "openrc.sh
+- add file "env.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
