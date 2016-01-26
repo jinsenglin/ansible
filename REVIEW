@@ -54,3 +54,6 @@
 - CHECK: http://10.5.50.188
 - CHECK: http://10.5.50.188:8088
 - CHECK: http://10.5.50.188:9090
+
+# TODO 每次重開機後自動掛載 /dev/vdb1 到 /usr/share/nginx/html/data
+# TODO 每次重開機後自動掛載 swap
