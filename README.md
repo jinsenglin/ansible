@@ -34,6 +34,7 @@
 - sudo apt-get install linux-image-extra-$(uname -r)
 - sudo apt-get install docker-engine
 - sudo service docker start
+- CONTAINER DEFAULT GATEWAY 172.17.0.1
 
 # about helo-docker in jenkins
 - sudo docker run hello-world
