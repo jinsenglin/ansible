@@ -103,6 +103,16 @@
 - add file "/usr/share/nginx/html/data/blobs/cache/gradle-2.8-bin.zip"
 
 # GITLAB - jinseng
+- create "public" project "installer-shell"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-shell-scripts" 匯入
+
+# GITLAB - jinseng
+- create "public" project "installer-rest"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-api-server" 匯入
+
+# GITLAB - jinseng
 - create "public" project "build-installer-vm-openstack-kvm"
 - add file "REAME.md"
 - add file "main.sh"
