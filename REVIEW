@@ -103,7 +103,8 @@
 - add file "main.sh"
 - add file "openrc.sh
 - add file "env.sh"
-- add fiel "ubuntu.pem"
+- add file "ubuntu.pem"
+- add file "func-configure-vm.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
