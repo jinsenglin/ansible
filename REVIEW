@@ -148,6 +148,8 @@
 - add file "make-mnt-s3-bootstrap-devops.sh"
 - add file "make-s3-bootstrap-devops-platform-api-server-1.0.0.jar.sh"
 - add file "update-etc-rc.local.sh"
+- add file "install-jdk-8u65.sh" #TODO
+- add file "install-gradle-2.8.sh" #TODO
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
