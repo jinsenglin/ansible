@@ -123,6 +123,7 @@
 - add file "apt-get-install-docker.sh"
 - add file "git-clone.sh"
 - add file "git-pull.sh"
+- add file "git-to-cache.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
