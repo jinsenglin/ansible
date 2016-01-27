@@ -97,6 +97,11 @@
 - add task "hello-gitlab"
 - add step "sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash""
 
+# NGINX
+- add folder "/usr/share/nginx/html/data/blobs/cache"
+- add file "/usr/share/nginx/html/data/blobs/cache/jdk-8u65-linux-x64.gz"
+- add file "/usr/share/nginx/html/data/blobs/cache/gradle-2.8-bin.zip"
+
 # GITLAB - jinseng
 - create "public" project "build-installer-vm-openstack-kvm"
 - add file "REAME.md"
@@ -109,10 +114,5 @@
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
 - add step "sudo docker run --rm=false --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash""
-
-# NGINX
-- add folder "/usr/share/nginx/html/data/blobs/cache"
-- add file "/usr/share/nginx/html/data/blobs/cache/jdk-8u65-linux-x64.gz"
-- add file "/usr/share/nginx/html/data/blobs/cache/gradle-2.8-bin.zip"
 
 # TODO 每次重開機後自動掛載 swap
