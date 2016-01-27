@@ -143,6 +143,11 @@
 - add file "git-clone.sh"
 - add file "git-pull.sh"
 - add file "git-to-cache.sh"
+- add file "make-docker-container-images.sh"
+- add file "make-mnt-s3-bootstrap-devops-big-file-cache.sh"
+- add file "make-mnt-s3-bootstrap-devops.sh"
+- add file "make-s3-bootstrap-devops-platform-api-server-1.0.0.jar.sh"
+- add file "update-etc-rc.local.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
