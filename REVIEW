@@ -99,8 +99,17 @@
 
 # NGINX
 - add folder "/usr/share/nginx/html/data/blobs/cache"
-- add file "/usr/share/nginx/html/data/blobs/cache/jdk-8u65-linux-x64.gz"
-- add file "/usr/share/nginx/html/data/blobs/cache/gradle-2.8-bin.zip"
+- add file "/usr/share/nginx/html/data/blobs/cache/jdk-8u65-linux-x64.gz" # used by installer
+- add file "/usr/share/nginx/html/data/blobs/cache/gradle-2.8-bin.zip" # used by installer
+- add file "/usr/share/nginx/html/data/blobs/cache/apacheds-2.0.0-M21-amd64.deb" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/bosh-openstack-cpi-release-v15.tgz" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/bosh-openstack-kvm-ubuntu-trusty-stemcell-v3012.tgz" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/bosh-release-v214.tgz" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/cf-release-v215.tgz" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/jdk-7u79-linux-x64.tar.gz" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/wso2am-1.9.1.zip" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/wso2das-3.0.0.zip" # used by platform
+- add file "/usr/share/nginx/html/data/blobs/cache/wso2is-5.0.0.zip" # used by platform
 
 # GITLAB - jinseng
 - create "public" project "installer-shell"
