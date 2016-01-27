@@ -113,6 +113,16 @@
 - 其他檔案從既有專案 "s3-bootstrap-devops-platform-api-server" 匯入
 
 # GITLAB - jinseng
+- create "public" project "oss-api"
+- add file "REAME.md"
+- 其他檔案從既有專案 "oss-api" 匯入
+
+# GITLAB - jinseng
+- create "public" project "oss-ui"
+- add file "REAME.md"
+- 其他檔案從既有專案 "oss-ui" 匯入
+
+# GITLAB - jinseng
 - create "public" project "build-installer-vm-openstack-kvm"
 - add file "REAME.md"
 - add file "main.sh"
