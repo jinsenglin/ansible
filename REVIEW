@@ -110,6 +110,7 @@
 - add file "env.sh"
 - add file "ubuntu.pem"
 - add file "func-configure-vm.sh"
+- add file "apt-get-install-docker.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
