@@ -150,6 +150,7 @@
 
 # JENKINS
 - add task "unit-test-func-configure-vm"
-- add step #TODO
+- add step "sudo docker run --rm=true --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "git clone http://172.17.0.1:9090/jinseng/build-installer-vm-openstack-kvm.git && cd build-installer-vm-openstack-kvm  && bash func-configure-vm.sh ubuntu.pem ubuntu 10.5.50.190 /data/blobs/cache"
+"
 
 # TODO 每次重開機後自動掛載 swap
