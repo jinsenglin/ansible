@@ -121,6 +121,8 @@
 - add file "ubuntu.pem"
 - add file "func-configure-vm.sh"
 - add file "apt-get-install-docker.sh"
+- add file "git-clone.sh"
+- add file "git-pull.sh"
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
