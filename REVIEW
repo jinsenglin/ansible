@@ -169,4 +169,18 @@ server {
 - add task "unit-test-func-configure-vm"
 - add step "sudo docker run --rm=true --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "git clone http://172.17.0.1:9090/jinseng/build-installer-vm-openstack-kvm.git && cd build-installer-vm-openstack-kvm  && bash func-configure-vm.sh ubuntu.pem ubuntu 10.5.50.190 /data/blobs/cache""
 
+# GITLAB - root
+- create account "sy" with password "ivygit!1"
+
+# GITLAB - jinseng
+- make branch "master" of project "oss-ui" to be "Developers can push"
+- add account "sy" as member of project "oss-ui" as role "developer"
+
+# GITLAB - root
+- create account "yuchihuang" with password "yuchin456@"
+
+# GITLAB - jinseng
+- make branch "master" of project "oss-api" to be "Developers can push"
+- add account "yuchihuang" as member of project "oss-api" as role "developer"
+
 # TODO 每次重開機後自動掛載 swap
