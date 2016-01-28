@@ -2,7 +2,7 @@
 - add step "sudo docker run --rm=false --name=init-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/init-openstack-for-platform-x.sh openstack-1 | bash""
 
 # GITLAB - user "jinseng" , project "jenkins"
-- add file "init-openstack-for-platform-x"
+- add file "scripts/init-openstack-for-platform-x"
 - add folder "configs"
 - add folder "configs/openstack-1"
 - add file "configs/openstack-1/openrc.sh"
