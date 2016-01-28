@@ -220,5 +220,6 @@ server {
 
 # GITLAB - root
 - create account "mike" with password "europe000"
+- create account "tom" with password "tom12345"
 
 # TODO 每次重開機後自動掛載 swap
