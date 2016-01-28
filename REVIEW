@@ -94,6 +94,9 @@ server {
 - add folder "dockerfiles"
 - add folder "dockerfiles/openstack-cli"
 - add file "dockerfiles/openstack-cli/Dockerfile"
+- add file "scripts/init-openstack-for-platform-x.sh" #TODO
+- add file "scripts/install-platform-x-on-openstack.sh" #TODO
+- add file "scripts/cleanup-openstack-for-platform-x.sh" #TODO
 
 # JENKINS
 - add task "docker-build-openstack-cli"
