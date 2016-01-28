@@ -218,4 +218,7 @@ server {
 - add task "cleanup-openstack-for-platform-x"
 - add step "sudo docker run --rm=false --name=cleanup-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/cleanup-openstack-for-platform-x.sh | bash""
 
+# GITLAB - root
+- create account "mike" with password "europe000"
+
 # TODO 每次重開機後自動掛載 swap
