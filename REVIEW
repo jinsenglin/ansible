@@ -193,14 +193,26 @@ server {
 - add file "REAME.md"
 - 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
 
+# JENKINS
+- add task "init-openstack-for-platform-x"
+- add step "" #TODO
+
 # GITLAB - jinseng
 - create "public" project "platform-x-openstack-install"
 - add file "REAME.md"
 - 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
 
+# JENKINS
+- add task "install-platform-x-on-openstack"
+- add step "" #TODO
+
 # GITLAB - jinseng
 - create "public" project "platform-x-openstack-cleanup"
 - add file "REAME.md"
 - 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
+
+# JENKINS
+- add task "cleanup-openstack-for-platform-x"
+- add step "" #TODO
 
 # TODO 每次重開機後自動掛載 swap
