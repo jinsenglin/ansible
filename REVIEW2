@@ -8,7 +8,7 @@
 - add file "configs/openstack-1/openrc.sh"
 
 # NGINX
-- add file "/data/blobs/cache/trusty-server-cloudimg-amd64-disk1.img"
+- add file "/usr/share/nginx/html/data/blobs/cache/trusty-server-cloudimg-amd64-disk1.img"
 
 # GITLAB - user "jinseng" , project "platform-x-openstack-init"
 - add file "main.sh"
