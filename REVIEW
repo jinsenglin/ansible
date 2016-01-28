@@ -30,6 +30,12 @@
 - sudo apt-get install nginx
 - CHECK: http://10.5.50.188
 - NOTE: html root dir is /usr/share/nginx/html/
+- PATCH: update file "/etc/nginx/sites-available/default" to enable directory listing and then run command "sudo service nginx reload"
+server {
+  // bra bra bra
+  localtion /data {
+    autoindex on;
+  }
 
 # install jenkins
 - wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
