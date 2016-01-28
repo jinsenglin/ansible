@@ -2,6 +2,10 @@
 - key pair "dev"
 - security groups ["default","ssh","jenkins","gitlab","nginx"]
 - with floating ip "10.5.50.188"
+- NOTE: ssh for ingress tcp port 22
+- NOTE: jenkins for ingress tcp port 8088
+- NOTE: gitlab for ingress tcp port 9090
+- NOTE: nginx for ingress tcp port 80
 
 # create volume named "nginx-html-root" of 100GB
 - attached to "jenkins" as "/dev/vdb"
