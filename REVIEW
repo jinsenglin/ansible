@@ -183,4 +183,9 @@ server {
 - make branch "master" of project "oss-api" to be "Developers can push"
 - add account "yuchihuang" as member of project "oss-api" as role "developer"
 
+# GITLAB - jinseng
+- create "public" project "installer-rest-ut"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-api-server-unit-test" 匯入
+
 # TODO 每次重開機後自動掛載 swap
