@@ -188,4 +188,19 @@ server {
 - add file "REAME.md"
 - 其他檔案從既有專案 "s3-bootstrap-devops-platform-api-server-unit-test" 匯入
 
+# GITLAB - jinseng
+- create "public" project "platform-x-openstack-init"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
+
+# GITLAB - jinseng
+- create "public" project "platform-x-openstack-install"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
+
+# GITLAB - jinseng
+- create "public" project "platform-x-openstack-cleanup"
+- add file "REAME.md"
+- 其他檔案從既有專案 "s3-bootstrap-devops-platform-installer-vm" 匯入 #TODO
+
 # TODO 每次重開機後自動掛載 swap
