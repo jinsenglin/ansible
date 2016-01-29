@@ -166,7 +166,7 @@ server {
 
 # JENKINS
 - add task "build-installer-vm-openstack-kvm"
-- add step "sudo docker run --rm=false --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash""
+- add step "sudo docker run --rm=true --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash""
 
 # JENKINS
 - add task "unit-test-func-configure-vm"
@@ -198,7 +198,7 @@ server {
 
 # JENKINS
 - add task "init-openstack-for-platform-x"
-- add step "sudo docker run --rm=false --name=init-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/init-openstack-for-platform-x.sh | bash""
+- add step "sudo docker run --rm=true --name=init-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/init-openstack-for-platform-x.sh | bash""
 
 # GITLAB - jinseng
 - create "public" project "platform-x-openstack-install"
@@ -207,7 +207,7 @@ server {
 
 # JENKINS
 - add task "install-platform-x-on-openstack"
-- add step "sudo docker run --rm=false --name=install-platform-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/install-platform-x-on-openstack.sh | bash""
+- add step "sudo docker run --rm=true --name=install-platform-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/install-platform-x-on-openstack.sh | bash""
 
 # GITLAB - jinseng
 - create "public" project "platform-x-openstack-cleanup"
@@ -216,7 +216,7 @@ server {
 
 # JENKINS
 - add task "cleanup-openstack-for-platform-x"
-- add step "sudo docker run --rm=false --name=cleanup-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/cleanup-openstack-for-platform-x.sh | bash""
+- add step "sudo docker run --rm=true --name=cleanup-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/cleanup-openstack-for-platform-x.sh | bash""
 
 # GITLAB - root
 - create account "mike" with password "europe000"
