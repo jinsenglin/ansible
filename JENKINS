@@ -14,7 +14,8 @@ sudo docker run --rm=true hello-world
 sudo docker run --rm=true openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/hello-gitlab.sh | bash"
 
 [init-openstack-for-platform-x]
-sudo docker run --rm=true --name=init-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/init-openstack-for-platform-x.sh | bash"
+sudo docker run --rm=true --name=init-openstack-$(date +"%s") -v /usr/share/nginx/html/data:/data -t -i openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/init-openstack-for-platform-x.sh | bash"
+# 如果沒有 -t , glance image-update 會失敗
 
 [install-platform-x-on-openstack]
 sudo docker run --rm=true --name=install-platform-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/install-platform-x-on-openstack.sh | bash"
