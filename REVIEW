@@ -223,3 +223,9 @@ server {
 - create account "tom" with password "tom12345"
 
 # TODO 每次重開機後自動掛載 swap
+- sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024k
+- sudo mkswap /swapfile
+- sudo swapon /swapfile
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-gitlab-as-your-very-own-private-github-clone
+
+# TODO 時區 (預設是UTC , 要改成UTC+8)
