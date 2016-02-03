@@ -228,6 +228,11 @@ server {
 - sudo swapon /swapfile
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-gitlab-as-your-very-own-private-github-clone
 
+# TODO 每次重開機後自動掛載 cifs
+- sudo mkdir /mnt/backup
+- sudo mount.cifs //主機/路徑/ /mnt/backup -o username=帳號,password=密碼
+- http://askubuntu.com/questions/399643/cifs-mount-through-fstab-not-mounting-at-boot
+
 # TODO 時區 (預設是UTC , 要改成UTC+8)
 - sudo dpkg-reconfigure tzdata
 - Current default time zone: 'Asia/Taipei' 
