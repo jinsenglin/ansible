@@ -228,7 +228,7 @@ server {
 - sudo swapon /swapfile
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-gitlab-as-your-very-own-private-github-clone
 
-# TODO 每次重開機後自動掛載 cifs
+# 每次重開機後自動掛載 cifs
 - sudo mkdir /mnt/backup
 - sudo sed -i '$ a //主機/路徑 /mnt/backup cifs username=帳號,password=密碼 0 0' /etc/fstab
 - sudo mount -a
