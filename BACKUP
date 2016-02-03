@@ -38,4 +38,15 @@ sudo cp -r /usr/share/nginx/html/data/jenkins_backup /mnt/backup/Backup_10.5.50.
 加用 rysnc 備份到 CIFS # TODO
 
 # GITLAB Community Edition 8.4.1 052b38d
-TODO
+- sudo mkdir /usr/share/nginx/html/data/gitlab_backup
+- sudo chown git:git /usr/share/nginx/html/data/gitlab_backup
+- 修改 GitLab 的設定檔 
+- 搜尋 gitlab_rails[`backup_path`] 的內容修改成 /usr/share/nginx/html/data/gitlab_backup (預設是 /var/opt/gitlab/backups)
+- sudo gitlab-ctl reconfigure
+- sudo gitlab-ctl restart
+- http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
+
+加用 cron 執行備份 # TODO
+
+sudo cp -r /usr/share/nginx/html/data/gitlab_backup /mnt/backup/Backup_10.5.50.188/gitlab
+加用 rysnc 備份到 CIFS # TODO
