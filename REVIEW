@@ -236,4 +236,5 @@ server {
 # TODO 時區 (預設是UTC , 要改成UTC+8)
 - sudo dpkg-reconfigure tzdata
 - Current default time zone: 'Asia/Taipei' 
+- 最好重開機讓所有服務都生效
 - http://www.arthurtoday.com/2015/02/ubuntu-command-line-reconfig-time-zone.html
