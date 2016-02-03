@@ -48,7 +48,10 @@ sudo cp -r /usr/share/nginx/html/data/jenkins_backup /mnt/backup/Backup_10.5.50.
 :: sudo /opt/gitlab/bin/gitlab-rake gitlab:backup:create
 - http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
 
-加用 cron 設定排程 # TODO
+加用 cron 設定排程 - 每天的凌晨兩點進行備份
+- sudo su
+- crontab -e
+:: 0 2 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
 
 sudo cp -r /usr/share/nginx/html/data/gitlab_backup /mnt/backup/Backup_10.5.50.188/gitlab
 加用 rysnc 備份到 CIFS # TODO
