@@ -233,7 +233,7 @@ server {
 - sudo mount.cifs //主機/路徑/ /mnt/backup -o username=帳號,password=密碼
 - http://askubuntu.com/questions/399643/cifs-mount-through-fstab-not-mounting-at-boot
 
-# TODO 時區 (預設是UTC , 要改成UTC+8)
+# 時區 (預設是UTC , 要改成UTC+8)
 - sudo dpkg-reconfigure tzdata
 - Current default time zone: 'Asia/Taipei' 
 - 最好重開機讓所有服務都生效
