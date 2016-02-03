@@ -34,6 +34,7 @@ cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/ca
 - 立即備份 && ls /usr/share/nginx/html/data/jenkins_backup (多一個資料 FULL-2016-02-03_15-41)
 - http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 
+sudo cp -r /usr/share/nginx/html/data/jenkins_backup /mnt/backup/Backup_10.5.50.188/jenkins
 加用 rysnc 備份到 CIFS # TODO
 
 # GITLAB Community Edition 8.4.1 052b38d
