@@ -1,0 +1,8 @@
+sudo mkdir /mnt/backup/Backup_10.5.50.188
+sudo mkdir /mnt/backup/Backup_10.5.50.188/jenkins
+sudo mkdir /mnt/backup/Backup_10.5.50.188/gitlab
+sudo mkdir /mnt/backup/Backup_10.5.50.188/nginx
+
+sudo cp -r /usr/share/nginx/html/data/blobs /mnt/backup/Backup_10.5.50.188/nginx
+# TODO jenkins
+# TODO gitlab
