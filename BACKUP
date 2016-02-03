@@ -4,5 +4,5 @@ sudo mkdir /mnt/backup/Backup_10.5.50.188/gitlab
 sudo mkdir /mnt/backup/Backup_10.5.50.188/nginx
 
 sudo cp -r /usr/share/nginx/html/data/blobs /mnt/backup/Backup_10.5.50.188/nginx
-# TODO jenkins
-# TODO gitlab
+# TODO jenkins v1.645
+# TODO gitlab Community Edition 8.4.1 052b38d
