@@ -230,8 +230,10 @@ server {
 
 # TODO 每次重開機後自動掛載 cifs
 - sudo mkdir /mnt/backup
-- sudo mount.cifs //主機/路徑/ /mnt/backup -o username=帳號,password=密碼
+- sudo sed -i '$ a //主機/路徑 /mnt/backup cifs username=帳號,password=密碼 0 0' /etc/fstab
+- sudo mount -a
 - http://askubuntu.com/questions/399643/cifs-mount-through-fstab-not-mounting-at-boot
+- sudo mount.cifs //主機/路徑 /mnt/backup -o username=帳號,password=密碼
 
 # 時區 (預設是UTC , 要改成UTC+8)
 - sudo dpkg-reconfigure tzdata
