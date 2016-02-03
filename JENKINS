@@ -1,5 +1,6 @@
 [build-installer-vm-openstack-kvm]
 sudo docker run --rm=true --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash"
+#NOTE: 排程每天午夜執行一次 0 0 * * *
 
   [build-installer-vm-openstack-kvm-from-scratch] 等於 [build-installer-vm-openstack-kvm]
   sudo docker run --rm=true --name=vm-builder-$(date +"%s") -v /usr/share/nginx/html/data:/data openstack-cli /bin/bash -c "curl http://172.17.0.1:9090/jinseng/jenkins/raw/master/scripts/build-installer-vm-openstack-kvm.sh | bash"
