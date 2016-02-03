@@ -222,18 +222,19 @@ server {
 - create account "mike" with password "europe000"
 - create account "tom" with password "tom12345"
 
-# TODO 每次重開機後自動掛載 swap
+# 每次重開機後自動掛載 swap
 - sudo dd if=/dev/zero of=/swapfile bs=1024 count=1024k
 - sudo mkswap /swapfile
-- sudo swapon /swapfile
+- sudo swapon /swapfile #立即生效 , 但是重開機後就失效了
+- sudo sed -i '$ a /swapfile none swap sw 0 0' /etc/fstab
 - https://www.digitalocean.com/community/tutorials/how-to-set-up-gitlab-as-your-very-own-private-github-clone
 
 # 每次重開機後自動掛載 cifs
 - sudo mkdir /mnt/backup
 - sudo sed -i '$ a //主機/路徑 /mnt/backup cifs username=帳號,password=密碼 0 0' /etc/fstab
-- sudo mount -a
+- sudo mount -a #立即生效
 - http://askubuntu.com/questions/399643/cifs-mount-through-fstab-not-mounting-at-boot
-- sudo mount.cifs //主機/路徑 /mnt/backup -o username=帳號,password=密碼
+- 手動測試遠端NFS SERVER是否可以使用 sudo mount.cifs //主機/路徑 /mnt/backup -o username=帳號,password=密碼 && ls /mnt/backup
 
 # 時區 (預設是UTC , 要改成UTC+8)
 - sudo dpkg-reconfigure tzdata
