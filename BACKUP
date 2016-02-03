@@ -3,6 +3,38 @@ sudo mkdir /mnt/backup/Backup_10.5.50.188/jenkins
 sudo mkdir /mnt/backup/Backup_10.5.50.188/gitlab
 sudo mkdir /mnt/backup/Backup_10.5.50.188/nginx
 
+# NGINX
 sudo cp -r /usr/share/nginx/html/data/blobs /mnt/backup/Backup_10.5.50.188/nginx
-# TODO jenkins v1.645
-# TODO gitlab Community Edition 8.4.1 052b38d
+
+缺點
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_nginx_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_idp_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_inception_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_ossui_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_apim_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_ossapi_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_mysql_vm.sh/create_vm.rb’: Operation not supported
+cp: cannot create symbolic link ‘/mnt/backup/Backup_10.5.50.188/nginx/blobs/cache/installer-shell/create_ldap_vm.sh/create_vm.rb’: Operation not supported
+
+改用 rysnc # TODO
+
+# JENKINS v1.645
+- sudo mkdir /usr/share/nginx/html/data/jenkins_backup
+- sudo chown jenkins:jenkins /usr/share/nginx/html/data/jenkins_backup
+- 安裝 ThinBackup Plugin
+- 設定備份
+:: 備份到 /usr/share/nginx/html/data/jenkins_backup
+:: 每周日進行完整備份 H 22 * * 7
+:: 其餘日子進行差異備份 H 22 * * 1-6
+:: Max number of backup sets -1
+:: Wait until Jenkins/Hudson is idle to perform a backup	Help for feature: Wait until Jenkins/Hudson is idle to perform a backup Force Jenkins to quiet mode after specified minutes 120
+:: Backup build results
+:: Backup build archive
+:: Move old backups to ZIP files
+- 立即備份 && ls /usr/share/nginx/html/data/jenkins_backup
+- http://ithelp.ithome.com.tw/question/10109197?tab=opinion
+
+加用 rysnc 備份到 CIFS # TODO
+
+# GITLAB Community Edition 8.4.1 052b38d
+TODO
