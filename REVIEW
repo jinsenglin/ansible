@@ -39,6 +39,7 @@ server {
   // bra bra bra
   localtion /data {
     autoindex on;
+    autoindex_localtime on;
   }
 
 # install jenkins
