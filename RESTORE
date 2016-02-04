@@ -5,6 +5,8 @@
 4. mount //140.92.25.252/cake /mnt/backup
 5. to restore nginx
 6. to restore jenkins
+- http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 7. to restore gitlab
+- http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
 
 # from scratch
