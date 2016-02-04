@@ -2,6 +2,11 @@ sudo mkdir /mnt/backup/Backup_10.5.50.188
 sudo mkdir /mnt/backup/Backup_10.5.50.188/jenkins
 sudo mkdir /mnt/backup/Backup_10.5.50.188/gitlab
 sudo mkdir /mnt/backup/Backup_10.5.50.188/nginx
+sudo mkdir /mnt/backup/Backup_10.5.50.188/data
+
+# ALL
+用 rysnc 備份到 CIFS
+sudo rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
 
 # NGINX
 用 rysnc 備份到 CIFS
