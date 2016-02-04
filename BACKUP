@@ -8,6 +8,9 @@ sudo mkdir /mnt/backup/Backup_10.5.50.188/data
 用 rysnc 備份到 CIFS
 sudo rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
 
+加用 cron 設定排程 - 每天的晚上十一點進行備份
+0 23 * * * /usr/bin/rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
+
 # NGINX
 用 rysnc 備份到 CIFS
 sudo rsync -av --delete  /usr/share/nginx/html/data/blobs/ /mnt/backup/Backup_10.5.50.188/nginx/
