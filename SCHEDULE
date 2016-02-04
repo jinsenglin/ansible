@@ -10,7 +10,7 @@
 # GITLAB Community Edition 8.4.1 052b38d 備份
 排程每天晚上十點執行一次 0 22 * * *
 
-# TODO - 使用 rsync 異地備援到 CIFS
+# 使用 rsync 異地備援到 CIFS
 排程每天晚上十一點執行一次 0 23 * * *
 
 觀察得知用 rysnc 一個 20GB 的映像檔到 CIFS 傳輸速率約 20MB/s
