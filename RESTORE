@@ -1,0 +1,10 @@
+# from snapshot "jenkins-20160204.raw"
+1. launch a vm from the snapshot image "jenkins-20160204.raw"
+2. attach a 100GB volume as /dev/vdb
+3. mount /dev/vdb1 /usr/share/nginx/html/data
+4. mount //140.92.25.252/cake /mnt/backup
+5. to restore nginx
+6. to restore jenkins
+7. to restore gitlab
+
+# from scratch
