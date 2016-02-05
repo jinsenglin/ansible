@@ -7,11 +7,11 @@
 - mkfs -t ext4 /dev/vdb1
 3. mount -a
 - mount /dev/vdb1 /usr/share/nginx/html/data
-:: sudo chown jenkins:jenkins /usr/share/nginx/html/data/jenkins_backup
-:: sudo chown git:git /usr/share/nginx/html/data/gitlab_backup
 - mount //140.92.25.252/cake /mnt/backup
 5. 用 rysnc 把資料從 CIFS 還原回來
 - sudo rsync -av --delete /mnt/backup/Backup_10.5.50.188/data/ /usr/share/nginx/html/data/
+- sudo chown jenkins:jenkins /usr/share/nginx/html/data/jenkins_backup
+- sudo chown git:git /usr/share/nginx/html/data/gitlab_backup
 6. to restore jenkins
 - http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 7. to restore gitlab
