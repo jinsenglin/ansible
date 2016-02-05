@@ -2,6 +2,8 @@
 1. launch a vm "jenkins-restore" from the snapshot image "jenkins-20160204.raw"
 - 檔案路徑在 //140.92.25.252/cake/Backup_10.5.50.188/jenkins-20160204.raw
 - 啟動後登入主機手動 (1)sudo sed -i "1 i 127.0.0.1 $HOSTNAME" /etc/hosts 或 (2)修改主機名稱還原回 "jenkins"
+NOTE: IP可以跟原來的主機不同 , e.g., as-is 10.5.50.188 to-be 10.5.50.190
+NOTE: HOSTNAME可以跟原來的主機不同 , e.g., as-is jenkins to-be jenkins-restore
 2. attach a 100GB volume as /dev/vdb
 - fdisk /dev/vdb
 - mkfs -t ext4 /dev/vdb1
