@@ -17,6 +17,21 @@
 - sudo service jenkins restart
 - http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 7. to restore gitlab
+// 停止 gitlab 的服務
+sudo gitlab-ctl stop unicorn
+sudo gitlab-ctl stop sidekiq
+// 這一部要指定某個備份檔進行還原
+sudo gitlab-rake gitlab:backup:restore BACKUP=1393513186
+//
+This will rebuild an authorized_keys file.
+You will lose any data stored in authorized_keys file.
+Do you want to continue (yes/no)? yes
+// 啟動 gitlab
+sudo gitlab-ctl start
+// Create satellites
+sudo gitlab-rake gitlab:satellites:create
+// Check GitLab
+sudo gitlab-rake gitlab:check SANITIZE=true
 - http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
 
 # from scratch
