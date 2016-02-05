@@ -4,6 +4,9 @@ sudo mkdir /mnt/backup/Backup_10.5.50.188/data
 # ALL
 用 rysnc 備份到 CIFS
 sudo rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
+- data/blobs/
+- data/jenkins_backup/
+- data/gitlab_backup/
 
 加用 cron jobs 設定排程 - 每天的晚上十一點進行備份
 - sudo su
