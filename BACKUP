@@ -1,19 +1,18 @@
 sudo mkdir /mnt/backup/Backup_10.5.50.188
-sudo mkdir /mnt/backup/Backup_10.5.50.188/jenkins
-sudo mkdir /mnt/backup/Backup_10.5.50.188/gitlab
-sudo mkdir /mnt/backup/Backup_10.5.50.188/nginx
 sudo mkdir /mnt/backup/Backup_10.5.50.188/data
 
 # ALL
 用 rysnc 備份到 CIFS
 sudo rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
 
-加用 cron 設定排程 - 每天的晚上十一點進行備份
+加用 cron jobs 設定排程 - 每天的晚上十一點進行備份
+- sudo su
+- crontab -e
 0 23 * * * /usr/bin/rsync -av --delete  /usr/share/nginx/html/data/ /mnt/backup/Backup_10.5.50.188/data/
 
 # NGINX
 用 rysnc 備份到 CIFS
-sudo rsync -av --delete  /usr/share/nginx/html/data/blobs/ /mnt/backup/Backup_10.5.50.188/nginx/
+sudo rsync -av --delete  /usr/share/nginx/html/data/blobs/ /mnt/backup/Backup_10.5.50.188/data/blobs/
 
 # JENKINS v1.645
 - sudo mkdir /usr/share/nginx/html/data/jenkins_backup
@@ -32,7 +31,7 @@ sudo rsync -av --delete  /usr/share/nginx/html/data/blobs/ /mnt/backup/Backup_10
 - http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 
 加用 rysnc 備份到 CIFS
-sudo rsync -av --delete  /usr/share/nginx/html/data/jenkins_backup/ /mnt/backup/Backup_10.5.50.188/jenkins/
+sudo rsync -av --delete  /usr/share/nginx/html/data/jenkins_backup/ /mnt/backup/Backup_10.5.50.188/data/jenkins_backup/
 
 # GITLAB Community Edition 8.4.1 052b38d
 - sudo mkdir /usr/share/nginx/html/data/gitlab_backup
@@ -45,12 +44,12 @@ sudo rsync -av --delete  /usr/share/nginx/html/data/jenkins_backup/ /mnt/backup/
 :: sudo /opt/gitlab/bin/gitlab-rake gitlab:backup:create
 - http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
 
-加用 cron 設定排程 - 每天的晚上十一點進行備份
+加用 cron jobs 設定排程 - 每天的晚上十一點進行備份
 - sudo su
 - crontab -e
 :: 0 23 * * * /opt/gitlab/bin/gitlab-rake gitlab:backup:create
 
 加用 rysnc 備份到 CIFS
-sudo rsync -av --delete  /usr/share/nginx/html/data/gitlab_backup/ /mnt/backup/Backup_10.5.50.188/gitlab/
+sudo rsync -av --delete  /usr/share/nginx/html/data/gitlab_backup/ /mnt/backup/Backup_10.5.50.188/data/gitlab_backup/
 
 
