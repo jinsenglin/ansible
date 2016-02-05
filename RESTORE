@@ -10,9 +10,11 @@
 - mount //140.92.25.252/cake /mnt/backup
 5. 用 rysnc 把資料從 CIFS 還原回來
 - sudo rsync -av --delete /mnt/backup/Backup_10.5.50.188/data/ /usr/share/nginx/html/data/
-- sudo chown jenkins:jenkins /usr/share/nginx/html/data/jenkins_backup
-- sudo chown git:git /usr/share/nginx/html/data/gitlab_backup
+- sudo chown -R jenkins:jenkins /usr/share/nginx/html/data/jenkins_backup
+- sudo chown -R git:git /usr/share/nginx/html/data/gitlab_backup
 6. to restore jenkins
+- 使用 Web UI 選擇還原包
+- sudo service jenkins restart
 - http://ithelp.ithome.com.tw/question/10109197?tab=opinion
 7. to restore gitlab
 - http://mycodetub.logdown.com/posts/260395-gitlab-backup-restore-settings-notes
